@@ -3,20 +3,20 @@
 # 	- bớt x đi 1 đơn vị
 # Tìm số bước nhỏ nhất để x = y.
 
-x,y=eval(input("Nhập: "))
-counter=0
-while x<y:
-    if y%2!=0:
-        y=y+1
-        y=y/2
-        counter+=2
-        if y<=x:
-            counter=counter+x-y
+x, y = eval(input("Nhập: "))
+counter = 0
+while x < y:
+    if y % 2 != 0:
+        y = y + 1
+        y = y / 2
+        counter += 2
+        if y <= x:
+            counter = counter + x - y
             break
     else:
-        y=y/2
-        counter+=1
-        if y<=x:
-            counter=counter+x-y
+        y = y / 2
+        counter += 1
+        if y <= x:
+            counter = counter + x - y
             break
-print("Số bước nhảy là: ",round(counter))
+print("Số bước nhảy là: ", round(counter))
